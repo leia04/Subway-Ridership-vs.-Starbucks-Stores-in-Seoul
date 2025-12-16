@@ -3,6 +3,8 @@
 ## Abstract
 This project explores whether higher subway station usage in Seoul is associated with a higher concentration of nearby Starbucks stores. Using October 2023 station-level ridership data and Starbucks locations within a 500m radius of each station, I evaluate the relationship via exploratory mapping, top/bottom comparisons, and statistical tests (linear regression and ANOVA). :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}
 
+![Regression between Subway Ridership and Starbucks Stores](figures/ridership_starbucks_regression.png)
+
 ## Problem
 **Hypothesis:** Stations with higher total ridership (boardings + alightings) have more Starbucks stores nearby. :contentReference[oaicite:2]{index=2}
 
