@@ -37,6 +37,7 @@ This project explores whether higher subway station usage in Seoul is associated
 - External preprocessing tools used for spatial preparation: **GeocodingTool** (address → coordinates) and **QGIS** (500m buffer counting).
 
 ## Contribution
-- Data cleaning/aggregation, exploratory visualizations, statistical testing (linear regression + ANOVA), and interpretation of results.  
-- Seoul Open Data Plaza (Oct 2023 subway ridership dataset)
-- Starbucks Korea store locator (store addresses)
+- Designed and executed the entire analysis workflow.
+- Collected, cleaned, and integrated subway ridership and Starbucks location data.
+- Conducted exploratory data analysis and statistical modeling (linear regression and ANOVA).
+- Interpreted results and produced publication-ready visualizations for clear communication.
