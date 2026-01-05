@@ -8,6 +8,14 @@ This project explores whether higher subway station usage in Seoul is associated
 ## Problem
 **Hypothesis:** Stations with higher total ridership (boardings + alightings) have more Starbucks stores nearby.
 
+
+## Key Findings
+- **Top 10 vs bottom 10 context:** top stations recorded roughly **3.0–5.5M** monthly board+alight events, while bottom stations were around **60K–140K**.{index=9}  
+- **Regression on top 40:** the linear relationship between total ridership and nearby Starbucks count was **not statistically significant** (R-squared ≈ **0.016**, p-value ≈ **0.433**).  
+- **Group differences (ANOVA):** when the top 40 stations were grouped by ridership rank, ANOVA indicated **significant differences between groups** (F ≈ **34.22**, p < 0.05).  
+  - Post-hoc results highlighted that the **top 1–10 group** differed significantly from the other groups.
+
+
 ## Approach
 - **Data preparation**
   - Ridership: Seoul Open Data Plaza (Oct 2023 station-by-line ridership) + station address dataset for filtering Seoul-only stations.
@@ -20,11 +28,6 @@ This project explores whether higher subway station usage in Seoul is associated
      - linear regression (ridership ~ Starbucks count) and
      - ANOVA across four ridership-ranked groups (10 stations per group).
 
-## Key Findings
-- **Top 10 vs bottom 10 context:** top stations recorded roughly **3.0–5.5M** monthly board+alight events, while bottom stations were around **60K–140K**.{index=9}  
-- **Regression on top 40:** the linear relationship between total ridership and nearby Starbucks count was **not statistically significant** (R-squared ≈ **0.016**, p-value ≈ **0.433**).  
-- **Group differences (ANOVA):** when the top 40 stations were grouped by ridership rank, ANOVA indicated **significant differences between groups** (F ≈ **34.22**, p < 0.05).  
-  - Post-hoc results highlighted that the **top 1–10 group** differed significantly from the other groups.
 
 ## Code
 - `R/00_setup.R`: Loads required libraries, sets up fonts (optional), defines helper utilities, and creates the output directory (`figures/`) for saving plots.
